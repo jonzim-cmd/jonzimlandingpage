@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Anwendungen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+        }
+        .app-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .app-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 200px;
+            transition: transform 0.2s;
+        }
+        .app-item:hover {
+            transform: scale(1.05);
+        }
+        .app-item img {
+            width: 100%;
+            height: auto;
+        }
+        .app-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meine Anwendungen</h1>
+    </header>
+    <div class="container">
+        <div class="app-grid">
+            <!-- Abwesenheiten Experiment -->
+            <div class="app-item">
+                <a href="https://jonzim-cmd.github.io/abwesenheiten_experiment/">
+                    <!-- Ersetze "pfad/zum/icon1.png" durch den Pfad zu deinem Icon-Bild -->
+                    <img src="pfad/zum/abwesenheiten_icon.png" alt="Abwesenheiten Experiment">
+                    <p>Abwesenheiten Experiment</p>
+                </a>
+            </div>
+            
+            <!-- Notenrechner -->
+            <div class="app-item">
+                <a href="https://jonzim-cmd.github.io/notenrechner/">
+                    <img src="pfad/zum/notenrechner_icon.png" alt="Notenrechner">
+                    <p>Notenrechner</p>
+                </a>
+            </div>
+            
+            <!-- Mantelbogen Tabelle -->
+            <div class="app-item">
+                <a href="https://jonzim-cmd.github.io/mantelbogen_tabelle/">
+                    <img src="pfad/zum/mantelbogen_icon.png" alt="Mantelbogen Tabelle">
+                    <p>Mantelbogen Tabelle</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
