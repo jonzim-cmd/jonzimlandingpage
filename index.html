@@ -49,6 +49,16 @@
       text-decoration: none;
       color: inherit;
     }
+    /* Unsichtbarer Button (Easter Egg) */
+    .hidden-button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      opacity: 0; /* vollständig unsichtbar */
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -94,7 +104,7 @@
         </a>
       </div>
 
-            <!-- Zeugnisgenerator -->
+      <!-- Zeugnisgenerator -->
       <div class="app-item">
         <a href="https://zeugnis-generator.vercel.app/">
           <img src="images/zeugnisgenerator.png" alt="Zeugnisgenerator">
@@ -103,5 +113,8 @@
       </div>
     </div>
   </div>
+  
+  <!-- Unsichtbarer Mini-Button am Seitenrand -->
+  <a class="hidden-button" href="https://jonzim-cmd.github.io/fingerdestodes/" title="Kleiner Witz"></a>
 </body>
 </html>
