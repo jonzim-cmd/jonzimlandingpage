@@ -11,8 +11,8 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      background-color: #121212;  /* dunkler Hintergrund */
-      color: #e0e0e0;             /* helle Schriftfarbe */
+      background-color: #121212;
+      color: #e0e0e0;
     }
     .container {
       max-width: 960px;
@@ -22,14 +22,14 @@
     .app-grid {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;  /* Zentriert die App-Items */
+      justify-content: center;
       gap: 30px;
     }
     .app-item {
-      background-color: #1e1e1e;  /* Etwas hellerer dunkler Hintergrund für die Karten */
+      background-color: #1e1e1e;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
       width: 200px;
       transition: transform 0.2s;
     }
@@ -49,15 +49,24 @@
       text-decoration: none;
       color: inherit;
     }
-    /* Unsichtbarer Button (Easter Egg) */
-    .hidden-button {
+    
+    /* Herz-Button */
+    .heart-button {
       position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      opacity: 0,5; /* vollständig unsichtbar */
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
       z-index: 1000;
+    }
+    .heart-button svg {
+      width: 100%;
+      height: 100%;
+      fill: #e0245e;
+      transition: transform 0.2s;
+    }
+    .heart-button:hover svg {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -114,7 +123,11 @@
     </div>
   </div>
   
-  <!-- Unsichtbarer Mini-Button am Seitenrand -->
-  <a class="hidden-button" href="https://jonzim-cmd.github.io/fingerdestodes/" title="Kleiner Witz"></a>
+  <!-- Herz-Button, der die lokale Index-Datei aus dem Ordner "girlfriendnotfound" öffnet -->
+  <a class="heart-button" href="girlfriendnotfound/index.html" title="Girlfriend Not Found">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+  </a>
 </body>
 </html>
